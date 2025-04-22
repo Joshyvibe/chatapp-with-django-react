@@ -1,0 +1,208 @@
+.auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.auth-form-wrapper {
+    margin: 15px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #087544;
+}
+
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.info-text {
+    margin-bottom: 20px;
+    color: #362a1d;
+    background-color: #dea5a5;
+    border: 5px solid transparent;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.terms-link {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block;
+}
+.terms-link p{
+    position: relative;
+    bottom: 1px;
+
+}
+
+.terms-link a{
+    text-decoration: underline;
+}
+
+.form-group label {
+    margin: 5px;
+    color: #fff;
+    font-size: 14px; 
+    line-height: 1.5; 
+    display: inline-block; 
+}
+
+.form-group input {
+    padding: 10px;
+    
+    border: 1px solid hsl(208, 63%, 18%);
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%; 
+    max-width: 100%;
+    resize: none; 
+}
+
+input[type="checkbox"] {
+    margin: 3px;
+    width: auto;
+    height: auto; 
+    accent-color: #17df49; 
+}
+
+.label-terms {
+    margin-left: 10px;
+    
+}
+
+.form-button {
+    padding: 10px 15px;
+    background-color: #087544;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+.form-button:hover {
+    background-color: #198d58;
+}
+
+
+
+
+
+.toggle-text {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.toggle-link {
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Add these styles for password strength indicator */
+.password-strength {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.password-strength.strong {
+    color: green;
+}
+
+.password-strength.moderate {
+    color: orange;
+}
+
+.password-strength.weak {
+    color: red;
+}
+
+
+
+@media (max-width: 768px) {
+    .auth-form-wrapper {
+        padding: 20px;
+    }
+
+    .form-button {
+        padding: 8px 12px;
+    }
+
+    .form-group {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5px;
+        
+    }
+    .form-group input {
+        padding: 10px; 
+        font-size: 16px; 
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+        margin-bottom: 5px; 
+    }
+    .terms-link p{
+        position: relative;
+        bottom: 3px;
+    
+    }
+}

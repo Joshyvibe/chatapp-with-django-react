@@ -1,0 +1,115 @@
+.chat-list-container {
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Sidebar styling */
+  .chat-sidebar {
+    width: 300px;
+    background: linear-gradient(135deg, #087544, #2a70c9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-sidebar.slide-in {
+    transform: translateX(0);
+  }
+  
+  .chat-sidebar.slide-out {
+    transform: translateX(-100%);
+  }
+  
+  .chat-header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+  }
+  
+  .chat-header h1 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .chat-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* User selector dropdown */
+  .user-selector {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .user-selector select,
+  .user-selector button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #087544;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-selector button {
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .user-selector button:hover {
+    background: #087a46;
+    color: white;
+  }
+  
+  /* Conversations list */
+  .conversation-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .conversation-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .conversation-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .conversation-item p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #ffcccc;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  
+  .no-conversation-message {
+    padding: 20px;
+    text-align: center;
+    color: #777;
+  }

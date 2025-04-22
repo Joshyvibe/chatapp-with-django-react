@@ -1,0 +1,93 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 30px;
+    border-radius: 50px;
+    background-color: #087544;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 70px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-logo {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .navbar-logo-text {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+  
+  
+  
+  
+  
+  
+  .navbar-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 6em;
+    right: 2em;
+    width: 250px;
+    height: auto;
+    background-color: #087544;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    margin: 20px 0;
+  }
+  
+  .sidebar-menu a,
+  .sidebar-menu button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar-menu button:hover,
+  .sidebar-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .close-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: right;
+  }
