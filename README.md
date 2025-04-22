@@ -4,7 +4,7 @@ This repository contains all the resources needed to build a robust, real-time c
 The system supports real-time messaging, online status indicators, typing indicators, and user authentication.
 
 This repository is featured in a video tutorial available on my YouTube channel, 'Joshyvibe'
-[Visit my YouTube Channel to watch video](https://youtu.be/mCOo0qBoQrw)
+[Visit my YouTube Channel to watch video](https://youtu.be/fXwaejZiwEQ)
 
 ---
 
